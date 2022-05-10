@@ -13,7 +13,7 @@ import javax.swing.*;
 
 public class v3 extends java.applet.Applet {
 	MediaTracker tracker = new MediaTracker(this);
-    Image offScreen;
+    	Image offScreen;
 	Graphics offG;
 
 	Image background, pic, temperory, back, hit, stand, image1, image2;
