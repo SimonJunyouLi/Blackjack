@@ -12,43 +12,42 @@ import java.applet.*;
 import javax.swing.*;
 
 public class v3 extends java.applet.Applet {
-	MediaTracker tracker = new MediaTracker(this);
-    	Image offScreen;
-	Graphics offG;
+    MediaTracker tracker = new MediaTracker(this);
+    Image offScreen;
+    Graphics offG;
 
-	Image background, pic, temperory, back, hit, stand, image1, image2;
-	Image userwin, comwin, bust, nbj;
-	Image b100, b200, b500, b1000, deal, start, cashout, restart;
-	AudioClip flip, Musicwin, Musiclose, moneysound;
+    Image background, pic, temperory, back, hit, stand, image1, image2;
+    Image userwin, comwin, bust, nbj;
+    Image b100, b200, b500, b1000, deal, start, cashout, restart;
+    AudioClip flip, Musicwin, Musiclose, moneysound;
 
-	ArrayList<Integer> userhand = new ArrayList<Integer>();
-	ArrayList<Integer> computerhand = new ArrayList<Integer>();
+    ArrayList<Integer> userhand = new ArrayList<Integer>();
+    ArrayList<Integer> computerhand = new ArrayList<Integer>();
 
-	int tempset, tempcard, tempnum, sumnum, sumnuma;
-	int usersum = 0;
-	int computersum = 0;
-	int usersuma = 0;
-	int computersuma = 0;
-	int x,y;
-	int turn = 1;
-	int userturn = 0;
-	int comturn = 0;
-	int betsum = 0;
-	int money = 2500;
-	int highscore = 2500;
+    int tempset, tempcard, tempnum, sumnum, sumnuma;
+    int usersum = 0;
+    int computersum = 0;
+    int usersuma = 0;
+    int computersuma = 0;
+    int x,y;
+    int turn = 1;
+    int userturn = 0;
+    int comturn = 0;
+    int betsum = 0;
+    int money = 2500;
+    int highscore = 2500;
 
+    String test, testA;
+    boolean cardstate;
+    boolean userstate = true;
+    boolean computerstate = true;
+    boolean naturalbj = true;
+    boolean restartstate = false;
+    boolean betstate = true;
+    boolean startstate = false;
+    boolean restartb = false;
 
-	String test, testA;
-	boolean cardstate;
-	boolean userstate = true;
-	boolean computerstate = true;
-	boolean naturalbj = true;
-	boolean restartstate = false;
-	boolean betstate = true;
-	boolean startstate = false;
-	boolean restartb = false;
-
-	Image [] clubs = new Image[13];
+    Image [] clubs = new Image[13];
     Image [] hearts = new Image[13];
     Image [] spades = new Image[13];
     Image [] diamonds = new Image[13];
